@@ -10,4 +10,4 @@ const TaskItem = ({ task , deleteTask, toggleTask }) => {
   )
 }
 
-export default TaskItem
+export default React.memo(TaskItem)

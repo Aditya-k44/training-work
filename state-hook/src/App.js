@@ -9,8 +9,8 @@ import HookCounterFour from './components/state/HookCounterFour';
 import DataFechting from './components/effect/DataFechting';
 // import ComponentC from './components/context/ComponentC'
 import { useReducer } from 'react';
-import CounterOne from './components/reducer/CounterOne';
-import CounterTwo from './components/reducer/CounterTwo';
+// import CounterOne from './components/reducer/CounterOne';
+// import CounterTwo from './components/reducer/CounterTwo';
 import Counterthree from './components/reducer/Counterthree';
 import ComponentA from './components/reducer/ComponentA'
 import ComponentB from './components/reducer/ComponentB'
@@ -18,6 +18,10 @@ import ComponentC from './components/reducer/ComponentC'
 import DataFetchingOne from './components/reducer/DataFetchingOne';
 import DataFechtinfTwo from './components/reducer/DataFechtinfTwo';
 import ParentComponent from './components/callback/ParentComponent';
+import Counter from './components/memo/Counter';
+import FocusInput from './components/ref/FocusInput';
+import CounterOne from './components/custom/CounterOne';
+import CounterTwo from './components/custom/CounterTwo';
 
 export const UserContext = React.createContext()
 export const StateContext = React.createContext()
@@ -71,7 +75,11 @@ function App() {
        */}
       {/* <DataFetchingOne /> */}
       {/* <DataFechtinfTwo /> */}
-      <ParentComponent />
+      {/* <ParentComponent /> */}
+      {/* <Counter /> */}
+      {/* <FocusInput /> */}
+      <CounterOne />
+      <CounterTwo />
     </div>
   );
 }
